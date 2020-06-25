@@ -57,3 +57,13 @@ INSERT INTO `status` (`status_id`, `status_description`, `status_ref_table`, `st
 INSERT INTO `status` (`status_id`, `status_description`, `status_ref_table`, `status_added_date`, `status_status`) VALUES 
 ('1', 'Active', 'title', '2020-06-15', '1');
 commit;
+
+
+
+
+/*employee_image table script*/
+CREATE TABLE IF NOT EXISTS employee_image (
+    employee_id INT PRIMARY KEY,
+    employee_image LONGBLOB,
+	employee_image_type VARCHAR(255) NOT NULL
+);
